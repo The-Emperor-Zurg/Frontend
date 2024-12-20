@@ -139,17 +139,29 @@ body {
     margin-bottom: 10px;
 }
 
-.gallery__description {
-    margin-bottom: 10px;
+.gallery__images {
+    display: flex; /* Располагает картинки в строку */
+    justify-content: space-between; /* Равномерное распределение картинок */
+    gap: 20px; /* Отступ между картинками */
 }
 
-.gallery__art {
-    font-family: 'Courier New', monospace;
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-    display: block;
-    overflow-x: auto;
+.gallery__item {
+    flex: 1; /* Каждая картинка занимает равную долю блока */
+    text-align: center; /* Центрирует текст под картинкой */
+}
+
+.gallery__image {
+    width: 600px; /* Фиксированная ширина изображения */
+    height: 400px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Увеличивает или уменьшает изображение, чтобы оно заполнило область */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для улучшения внешнего вида */
+}
+
+.gallery__caption {
+    margin-top: 10px; /* Отступ между картинкой и описанием */
+    font-size: 1rem; /* Размер текста */
+    color: #333; /* Цвет текста */
 }
 
 .snippet {
