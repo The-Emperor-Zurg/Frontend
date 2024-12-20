@@ -140,28 +140,28 @@ body {
 }
 
 .gallery__images {
-    display: flex; /* Располагает картинки в строку */
-    justify-content: space-between; /* Равномерное распределение картинок */
-    gap: 20px; /* Отступ между картинками */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .gallery__item {
-    flex: 1; /* Каждая картинка занимает равную долю блока */
-    text-align: center; /* Центрирует текст под картинкой */
+    flex: 1;
+    text-align: center;
 }
 
 .gallery__image {
-    width: 600px; /* Фиксированная ширина изображения */
-    height: 400px; /* Фиксированная высота изображения */
-    object-fit: cover; /* Увеличивает или уменьшает изображение, чтобы оно заполнило область */
-    border-radius: 10px; /* Закругленные углы */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 10); /* Тень для улучшения внешнего вида */
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 10);
 }
 
 .gallery__caption {
-    margin-top: 10px; /* Отступ между картинкой и описанием */
-    font-size: 1rem; /* Размер текста */
-    color: #333; /* Цвет текста */
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
 }
 
 .snippet {
