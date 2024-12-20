@@ -6,89 +6,139 @@
   <meta name="keywords" content="Российская премьер лига, Рпл, Футбол">
   <meta name="description" content="Сайт о российской премьер лиге: новости, таблицы и информация о командах участниках">
   <meta name="author" content="Вакуленко Назар Станиславович">
-  <title>Российская Премьер лига</title>
+  <title>Российская Премьер Лига</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page">
 
-<header>
-  <h1>Российский Футбол</h1>
-  <nav>
-    <ul>
-      <li><a href="#teams">Команды</a></li>
-      <li><a href="#schedule">Расписание</a></li>
-      <li><a href="#gallery">Галерея</a></li>
+<header class="header">
+  <img class="header__logo" src="pics/logo.png" alt="Логотип">
+  <h1 class="header__title">Российская Премьер Лига</h1>
+  <nav class="header__nav">
+    <ul class="header__menu">
+      <li class="header__menu-item"><a class="header__menu-link" href="#teams">Команды</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="#schedule">Расписание</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="#gallery">Галерея</a></li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <section id="teams">
-    <h2>Команды</h2>
-    <ul>
-      <li>Зенит</li>
-      <li>Спартак</li>
-      <li>Локомотив</li>
-      <li>ЦСКА</li>
-      <li>Краснодар</li>
-      <li>Ростов</li>
-      <li>Динамо</li>
-      <li>Рубин</li>
-      <li>Акрон</li>
-      <li>Крылья Советов</li>
-      <li>Динамо Махачкала</li>
-      <li>Пари Нижний Новгород</li>
-      <li>Химки</li>
-      <li>Факел</li>
-      <li>Ахмат</li>
-      <li>Оренбург</li>
+<main class="main">
+  <section class="teams" id="teams">
+    <h2 class="teams__title">Команды</h2>
+    <ul class="teams__list">
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/zenit.png" alt="Логотип Зенит">
+        Зенит
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/spartak.png" alt="Логотип Спартак">
+        Спартак
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/loko.png" alt="Логотип Локомотив">
+        Локомотив
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/cska.png" alt="Логотип ЦСКА">
+        ЦСКА
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/krasnodar.png" alt="Логотип Краснодар">
+        Краснодар
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/rostov.png" alt="Логотип Ростов">
+        Ростов
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/dinamo.png" alt="Логотип Динамо">
+        Динамо
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/rubin.png" alt="Логотип Рубин">
+        Рубин
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/akron.png" alt="Логотип Акрон">
+        Акрон
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/krilya.png" alt="Логотип Крылья Советов">
+        Крылья Советов
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/mahachkala.png" alt="Логотип Динамо Махачкала">
+        Динамо Махачкала
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/parinn.png" alt="Логотип Пари Нижний Новгород">
+        Пари Нижний Новгород
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/himki.png" alt="Логотип Химки">
+        Химки
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/fakel.png" alt="Логотип Факел">
+        Факел
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/ahmat.png" alt="Логотип Ахмат">
+        Ахмат
+      </li>
+      <li class="teams__item">
+        <img class="teams__logo" src="pics/teams/orenburg.png" alt="Логотип Оренбург">
+        Оренбург
+      </li>
     </ul>
-    <aside>
-      <p>Каждая команда имеет свою <strong>историю</strong> и <em>уникальных</em> игроков.</p>
+    <aside class="teams__aside">
+      <p class="teams__text">Каждая команда имеет свою <strong>историю</strong> и <em>уникальных</em> игроков.</p>
     </aside>
   </section>
 
-  <section id="schedule">
-    <h2>Расписание</h2>
-    <ol>
-      <li>Зенит - Спартак: 23 декабря</li>
-      <li>ЦСКА - Локомотив: 24 декабря</li>
-      <li>Спартак - Локомотив: 25 декабря</li>
+  <section class="schedule" id="schedule">
+    <h2 class="schedule__title">Расписание</h2>
+    <ol class="schedule__list">
+      <li class="schedule__item">Зенит - Спартак: 23 декабря</li>
+      <li class="schedule__item">ЦСКА - Локомотив: 24 декабря</li>
+      <li class="schedule__item">Спартак - Локомотив: 25 декабря</li>
     </ol>
   </section>
 
-  <section id="gallery">
-    <h2>Галерея</h2>
-    <p>Псевдографика:</p>
-    <pre>
+  <section class="gallery" id="gallery">
+    <h2 class="gallery__title">Галерея</h2>
+    <p class="gallery__description">Псевдографика:</p>
+    <pre class="gallery__art">
   _______          _______
- /       \        /       \
+ /       \\        /       \\
 |  O   O  |      |  O   O  |
- \   ^   /        \   ^   /
-  \_____/          \_____/
+ \\   ^   /        \\   ^   /
+  \\_____/          \\_____/
   </pre>
   </section>
 
-  <section id="snippet">
-    <h2>Пример кода</h2>
-    <pre><code>
+  <section class="snippet" id="snippet">
+    <h2 class="snippet__title">Пример кода</h2>
+    <pre class="snippet__code"><code>
 def goal_scored(match, team_1, team_2):
       match.score_team_1 += 1
       print(f'{team_1} has scored {team_2}!')
     </code></pre>
   </section>
 
-  <section id="quote">
-    <h2>Цитата и формула успеха</h2>
-    <blockquote>
+  <section class="quote" id="quote">
+    <h2 class="quote__title">Цитата и формула успеха</h2>
+    <blockquote class="quote__text">
       "Футбол – это больше, чем жизнь и смерть, это искусство." – Роналдиньо.
     </blockquote>
-    <p>Формула успеха: Успех = Работа <sub>умноженная</sub> на Усилия <sup>2</sup>.</p>
+    <p class="quote__formula">Формула успеха: Успех = Работа умноженная на Усилия <sup>2</sup>.</p>
   </section>
 </main>
 
-<footer>
-  <p>&copy; 2024 Российская Премьер лига. Все права не защищены.</p>
+<footer class="footer">
+  <p class="footer__text">&copy; 2024 Российская Премьер Лига. Все права не защищены.</p>
 </footer>
 </body>
 </html>
