@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Российская премьер лига, расписание, избранное">
+    <meta name="description" content="Фильтрация и выбор матчей РПЛ">
+    <meta name="author" content="Вакуленко Назар Станиславович">
+    <title>Матчи РПЛ - Фильтр и избранное</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+
+<header class="header">
+    <img class="header__logo" src="pics/logo.png" alt="Логотип">
+    <h1 class="header__title">Российская Премьер Лига</h1>
+    <nav class="header__nav">
+        <ul class="header__menu">
+            <li class="header__menu-item"><a class="header__menu-link" href="main.html">Главная</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="teams.html">Команды</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="table.html">Таблица</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="schedule.html">Расписание</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="gallery.html">Галерея</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="comparison_table.html">Сравнение</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="favorites_schedule.html">Избранное</a></li>
+            <li class="header__menu-item"><a class="header__menu-link active" href="review.html">Отзывы</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+    <section id="filter-section">
+        <h2>Фильтр матчей</h2>
+        <form id="match-filter-form" class="filter-form">
+            <div class="form-group">
+                <label for="filter-date">Дата:</label>
+                <input type="date" id="filter-date">
+            </div>
+            <div class="form-group filter-teams">
+                <label for="filter-teams">Команды:</label>
+                <div class="select-and-clear">
+                    <select id="filter-teams" multiple>
+                        <option value="Зенит">Зенит</option>
+                        <option value="Спартак">Спартак</option>
+                        <option value="ЦСКА">ЦСКА</option>
+                        <option value="Локомотив">Локомотив</option>
+                        <option value="Краснодар">Краснодар</option>
+                        <option value="Динамо">Динамо</option>
+                        <option value="Ростов">Ростов</option>
+                        <option value="Рубин">Рубин</option>
+                        <option value="Акрон">Акрон</option>
+                    </select>
+                    <button id="clear-teams" type="button" class="btn-clear">Очистить</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="filter-city">Город:</label>
+                <input type="text" id="filter-city" placeholder="Введите город">
+            </div>
+            <button type="submit" class="btn-submit">Показать матчи</button>
+        </form>
+    </section>
+
+    <section id="match-results">
+        <h2>Результаты</h2>
+        <div class="match-results-container">
+            <table id="results-table">
+                <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Время</th>
+                    <th>Команды</th>
+                    <th>Стадион</th>
+                    <th>Город</th>
+                    <th>Избранное</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Матчи будут добавлены через JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="favorite">
+        <div class="header-actions">
+            <h2>Избранные матчи</h2>
+            <button id="clear-favorites" class="btn-clear">Очистить избранное</button>
+        </div>
+        <div class="table-container">
+            <table id="favorites-table">
+                <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Время</th>
+                    <th>Команды</th>
+                    <th>Стадион</th>
+                    <th>Город</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Избранные матчи будут добавлены через JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2025 Российская Премьер Лига. Все права не защищены.</p>
+</footer>
+
+<script src="src/favorites.js"></script>
+<script src="src/header_menu_link.js"></script>
+<script src="src/page_load_time.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Российская премьер лига, РПЛ, Таблица, Галерея">
+  <meta name="description" content="Галерея Российской Премьер Лиги.">
+  <meta name="author" content="Вакуленко Назар Станиславович">
+  <title>Галерея - Российская Премьер Лига</title>
+
+  <!-- Подключаем стили Fancybox и Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+
+<header class="header">
+  <img class="header__logo" src="pics/logo.png" alt="Логотип">
+  <h1 class="header__title">Российская Премьер Лига</h1>
+  <nav class="header__nav">
+    <ul class="header__menu">
+      <li class="header__menu-item"><a class="header__menu-link" href="main.html">Главная</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="teams.html">Команды</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="table.html">Таблица</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="schedule.html">Расписание</a></li>
+      <li class="header__menu-item"><a class="header__menu-link active" href="gallery.html">Галерея</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="comparison_table.html">Сравнение</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="favorites_schedule.html">Избранное</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="review.html">Отзывы</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="gallery" id="gallery">
+    <h2 class="gallery__title">Галерея</h2>
+    <div class="gallery__images">
+      <!-- Добавляем ссылки с data-fancybox -->
+      <figure class="gallery__item">
+        <a href="pics/galery/karpin.png" data-fancybox="gallery" data-caption="Валерий Карпин — легендарный тренер ФК Ростов.">
+          <img class="gallery__image" src="pics/galery/karpin.png" alt="Карпин">
+        </a>
+        <figcaption class="gallery__caption">Валерий Карпин — легендарный тренер ФК Ростов.</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <a href="pics/galery/zenit_chemp.png" data-fancybox="gallery" data-caption="Зенит — Чемпион России 2023/2024.">
+          <img class="gallery__image" src="pics/galery/zenit_chemp.png" alt="Зенит - Чемпион">
+        </a>
+        <figcaption class="gallery__caption">Зенит — Чемпион России 2023/2024.</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <a href="pics/galery/rostov_vs_bayern.png" data-fancybox="gallery" data-caption="Ростов обыгрывает Баварию в сезоне 2016/2017.">
+          <img class="gallery__image" src="pics/galery/rostov_vs_bayern.png" alt="Ростов - Бавария">
+        </a>
+        <figcaption class="gallery__caption">Ростов обыгрывает Баварию в сезоне 2016/2017.</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <a href="pics/galery/boyarskiy.png" data-fancybox="gallery" data-caption="Михаил Боярский">
+          <img class="gallery__image" src="pics/galery/boyarskiy.png" alt="Михаил Боярский">
+        </a>
+        <figcaption class="gallery__caption">Михаил Боярский - петербургский д`Артаньян.</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <a href="pics/galery/khoren_bayramyan.png" data-fancybox="gallery" data-caption="Хорен Байрамян">
+          <img class="gallery__image" src="pics/galery/khoren_bayramyan.png" alt="Хорен Байрамян">
+        </a>
+        <figcaption class="gallery__caption">Хорен Байрамян - самый лучший из армян.</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <a href="pics/galery/rostov_arena.png" data-fancybox="gallery" data-caption="Ростов Арена">
+          <img class="gallery__image" src="pics/galery/rostov_arena.png" alt="Ростов Арена">
+        </a>
+        <figcaption class="gallery__caption">Ростов Арена - стадион построенный для ЧМ 2018.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="footer__text">&copy; 2025 Российская Премьер Лига. Все права не защищены.</p>
+</footer>
+
+<!-- Подключаем скрипты Fancybox и Swiper -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+
+
+<script src="src/gallery.js"></script>
+<script src="src/page_load_time.js"></script>
+<script src="src/header_menu_link.js"></script>
+
+</body>
+</html>
