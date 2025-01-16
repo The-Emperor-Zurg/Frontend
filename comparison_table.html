@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Российская премьер лига, Рпл, Сравнение">
+  <meta name="description" content="Таблица сравнения Российской Премьер Лиги.">
+  <meta name="author" content="Вакуленко Назар Станиславович">
+  <title>Сравнение - Российская Премьер Лига</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+
+<header class="header">
+  <img class="header__logo" src="pics/logo.png" alt="Логотип">
+  <h1 class="header__title">Российская Премьер Лига</h1>
+  <nav class="header__nav">
+    <ul class="header__menu">
+      <li class="header__menu-item"><a class="header__menu-link" href="main.html">Главная</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="teams.html">Команды</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="table.html">Таблица</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="schedule.html">Расписание</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="gallery.html">Галерея</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="comparison_table.html">Сравнение</a></li>
+      <li class="header__menu-item"><a class="header__menu-link" href="favorites_schedule.html">Избранное</a></li>
+      <li class="header__menu-item"><a class="header__menu-link active" href="review.html">Отзывы</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="comparison-table-section" id="comparison_table">
+    <h2 class="comparison-table-section__title">Таблица сравнения</h2>
+
+    <form id="comparison-columns-form">
+      <label><input type="checkbox" name="columns" value="team" checked> Команды</label>
+      <label><input type="checkbox" name="columns" value="goals_scored" checked> Забитые голы</label>
+      <label><input type="checkbox" name="columns" value="goals_conceded"> Пропущенные голы</label>
+      <label><input type="checkbox" name="columns" value="points" checked> Очки</label>
+      <label><input type="checkbox" name="columns" value="wins"> Победы</label>
+      <label><input type="checkbox" name="columns" value="draws"> Ничьи</label>
+      <label><input type="checkbox" name="columns" value="defeats"> Поражения</label>
+      <label><input type="checkbox" name="columns" value="form"> Форма</label>
+    </form>
+
+    <div>
+      <label for="comparison-sort-by">Сортировать по:</label>
+      <select id="comparison-sort-by">
+        <option value="points">Очки</option>
+        <option value="goals_scored">Забитые голы</option>
+        <option value="goals_conceded">Пропущенные голы</option>
+        <option value="wins">Победы</option>
+        <option value="draws">Ничьи</option>
+        <option value="defeats">Поражения</option>
+        <option value="form">Форма</option>
+      </select>
+
+      <label for="comparison-sort-order">Порядок:</label>
+      <select id="comparison-sort-order">
+        <option value="asc">По возрастанию</option>
+        <option value="desc">По убыванию</option>
+      </select>
+    </div>
+
+    <table id="comparison-dynamic-table">
+      <thead>
+      <tr></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="footer__text">&copy; 2025 Российская Премьер Лига. Все права не защищены.</p>
+</footer>
+
+<script src="src/comparison.js"></script>
+<script src="src/header_menu_link.js"></script>
+<script src="src/page_load_time.js"></script>
+
+</body>
+</html>
