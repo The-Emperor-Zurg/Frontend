@@ -1,4 +1,3 @@
-/* Общие стили */
 html, body {
     margin: 0;
     overflow-x: hidden;
@@ -16,7 +15,6 @@ body {
     height: 100%;
 }
 
-/* Стили шапки */
 .header {
     position: fixed;
     top: 0;
@@ -72,15 +70,14 @@ body {
 }
 
 
-/* Основной контент */
 .main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    padding-top: 120px; /* Отступ для фиксированной шапки */
+    padding-top: 120px;
     padding-right: 50px;
     padding-left: 20px;
-    margin: 20px auto; /* Добавляем отступы сверху и снизу */
+    margin: 20px auto;
     width: 100%;
     box-sizing: border-box;
 }
@@ -143,7 +140,7 @@ body {
 
 .table {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); /* 10 колонок */
+    grid-template-columns: repeat(10, 1fr);
     gap: 5px;
     width: 100%;
     background-color: #ffffff;
@@ -153,7 +150,7 @@ body {
 }
 
 .table__row {
-    display: contents; /* Чтобы строки соответствовали grid */
+    display: contents;
 }
 
 .table__row--header {
@@ -209,8 +206,8 @@ body {
 .gallery__images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Центрируем элементы по горизонтали */
-    gap: 20px; /* Отступ между элементами */
+    justify-content: center;
+    gap: 20px;
 }
 
 .gallery__item {
@@ -224,7 +221,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.2s ease, transform 0.2s ease;
-    width: 300px; /* Фиксированная ширина для равномерности */
+    width: 300px;
 }
 
 .gallery__item:hover {
@@ -233,8 +230,8 @@ body {
 }
 
 .gallery__image {
-    width: 90%; /* Пропорциональная ширина */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -243,7 +240,7 @@ body {
     margin-top: 10px;
     font-size: 1rem;
     color: #333;
-    min-height: 50px; /* Устанавливаем минимальную высоту для равного выравнивания */
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -254,8 +251,8 @@ body {
 .gallery__image {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Ограничение по высоте */
-    object-fit: cover; /* Масштабируем изображение, сохраняя пропорции */
+    max-height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -264,7 +261,7 @@ body {
     margin-top: 10px;
     font-size: 1rem;
     color: #333;
-    min-height: 50px; /* Устанавливаем минимальную высоту для равного выравнивания */
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -308,8 +305,8 @@ body {
 .review-form__textarea,
 .review-form__button {
     box-sizing: border-box;
-    width: 100%; /* Устанавливаем ту же ширину, что и у input и textarea */
-    padding: 10px; /* Совпадающие отступы */
+    width: 100%;
+    padding: 10px;
     font-size: 1em;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -401,35 +398,34 @@ body {
 }
 
 .footer {
-    background-color: red; /* Цвет фона как у заголовка */
-    color: #fff; /* Белый текст */
-    text-align: center; /* Центрирование текста */
-    padding: 20px 0; /* Отступы сверху и снизу */
-    font-size: 1rem; /* Размер шрифта */
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px; /* Фиксированная высота футера */
+    height: 100px;
     box-sizing: border-box;
 }
 
-/* Стили для таблицы */
 #comparison-dynamic-table-container {
     width: 100%;
-    overflow-x: auto; /* Добавляет горизонтальную прокрутку */
+    overflow-x: auto;
     margin-top: 20px;
 }
 
 #comparison-dynamic-table {
     width: 100%;
-    min-width: 800px; /* Минимальная ширина таблицы */
+    min-width: 800px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    background-color: #ffffff; /* Фон таблицы */
+    background-color: #ffffff;
 }
 
 #comparison-dynamic-table th, #comparison-dynamic-table td {
@@ -439,10 +435,10 @@ body {
 
 #comparison-dynamic-table th {
     text-align: center;
-    background-color: #004080; /* Темно-синий фон для заголовков */
-    color: #ffffff; /* Белый текст */
+    background-color: #004080;
+    color: #ffffff;
     font-weight: bold;
-    text-transform: uppercase; /* Заглавные буквы */
+    text-transform: uppercase;
 }
 
 #comparison-dynamic-table td {
@@ -451,19 +447,18 @@ body {
 
 #comparison-dynamic-table td:first-child {
     text-align: left;
-    font-weight: bold; /* Жирный текст для названия команды */
+    font-weight: bold;
 }
 
 #comparison-dynamic-table tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Светло-серый фон для нечетных строк */
+    background-color: #f9f9f9;
 }
 
 #comparison-dynamic-table tr:hover {
-    background-color: #f1f1f1; /* Светло-серый фон при наведении */
-    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
 }
 
-/* Отступы и выравнивание формы */
 form {
     margin-bottom: 20px;
     display: flex;
@@ -486,7 +481,7 @@ form select {
 }
 
 form input[type="checkbox"] {
-    transform: scale(1.2); /* Увеличивает размер чекбоксов */
+    transform: scale(1.2);
 }
 
 h2.comparison-table-section__title {
@@ -496,7 +491,6 @@ h2.comparison-table-section__title {
     text-align: center;
 }
 
-/* Добавим плавные тени и скругленные углы к секции */
 .comparison-table-section {
     padding: 20px;
     border-radius: 10px;
@@ -568,50 +562,48 @@ h2.comparison-table-section__title {
 }
 
 #favorites-table th, #results-table th, #favorites-table td, #results-table td {
-    padding: 15px 20px; /* Увеличиваем отступы */
-    border-bottom: 1px solid #ddd; /* Добавляем границу */
-    text-align: center; /* Выравнивание по центру */
-    vertical-align: middle; /* Центрируем текст вертикально */
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #favorites-table th, #results-table th {
-    background-color: #004080; /* Темно-синий фон для заголовков */
-    color: #ffffff; /* Белый текст */
+    background-color: #004080;
+    color: #ffffff;
     font-weight: bold;
-    text-transform: uppercase; /* Заглавные буквы */
+    text-transform: uppercase;
 }
 
 #favorites-table tr:nth-child(odd), #results-table tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Светло-серый фон для нечетных строк */
+    background-color: #f9f9f9;
 }
 
 #favorites-table tr:hover, #results-table tr:hover {
-    background-color: #f1f1f1; /* Светло-серый фон при наведении */
+    background-color: #f1f1f1;
     transition: background-color 0.3s ease;
 }
 
-/* Кнопка "Очистить избранное" */
 #clear-favorites {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    float: right; /* Размещаем кнопку справа */
-    margin-top: -40px; /* Поднимаем кнопку ближе к таблице */
+    float: right;
+    margin-top: -40px;
 }
 
 #clear-favorites:hover {
-    background-color: red; /* Более светлый оттенок синего при наведении */
+    background-color: red;
     transition: background-color 0.3s ease;
 }
 
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
     .header {
         flex-direction: row;
-        flex-wrap: wrap; /* Включаем перенос строк на маленьких экранах */
+        flex-wrap: wrap;
         padding: 10px;
     }
 
@@ -630,7 +622,7 @@ h2.comparison-table-section__title {
         flex-direction: row;
         align-items: flex-start;
         gap: 5px;
-        width: 100%; /* Меню занимает всю ширину */
+        width: 100%;
     }
 
     .header__menu-item {
@@ -649,24 +641,24 @@ h2.comparison-table-section__title {
     }
 
     .teams, .schedule, .gallery, .snippet, .quote {
-        min-height: calc(100vh - 150px); /* Учитываем меньшую высоту шапки */
+        min-height: calc(100vh - 150px);
     }
 
     #comparison-dynamic-table th, #comparison-dynamic-table td {
-        padding: 10px 15px; /* Уменьшаем отступы */
-        font-size: 0.9rem; /* Уменьшаем шрифт */
+        padding: 10px 15px;
+        font-size: 0.9rem;
     }
 
     h2.comparison-table-section__title {
-        font-size: 1.5rem; /* Уменьшаем заголовок */
+        font-size: 1.5rem;
     }
 
     form {
-        gap: 5px; /* Уменьшаем отступы между элементами формы */
+        gap: 5px;
     }
 
     form select, form label {
-        font-size: 0.9rem; /* Уменьшаем шрифт в форме */
+        font-size: 0.9rem;
     }
 }
 
