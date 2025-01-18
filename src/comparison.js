@@ -25,16 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const tableBody = document.querySelector("#comparison-dynamic-table tbody");
 
     const renderTable = () => {
-        // Get selected columns
         const selectedColumns = Array.from(columnsForm.elements)
             .filter(input => input.checked)
             .map(input => input.value);
 
-        // Get sorting options
         const sortBy = sortBySelect.value;
         const sortOrder = sortOrderSelect.value;
 
-        // Sort the data
         const sortedData = [...teamsData].sort((a, b) => {
             if (sortOrder === "asc") {
                 return a[sortBy] > b[sortBy] ? 1 : -1;
@@ -43,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Render table header
         tableHead.innerHTML = "";
         selectedColumns.forEach(column => {
             const th = document.createElement("th");
@@ -60,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
             tableHead.appendChild(th);
         });
 
-        // Render table body
         tableBody.innerHTML = "";
         sortedData.forEach(row => {
             const tr = document.createElement("tr");
@@ -73,11 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Event listeners
     columnsForm.addEventListener("change", renderTable);
     sortBySelect.addEventListener("change", renderTable);
     sortOrderSelect.addEventListener("change", renderTable);
 
-    // Initial render
     renderTable();
 });

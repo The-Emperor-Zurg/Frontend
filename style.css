@@ -179,6 +179,18 @@ body {
     background-color: #f9f9f9;
 }
 
+.form__win {
+    color: darkgreen;
+}
+
+.form__draw {
+    color: orange;
+}
+
+.form__loss {
+    color: red;
+}
+
 .gallery {
     padding: 20px;
     background-color: #ffffff;

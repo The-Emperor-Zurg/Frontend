@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     clearTeamsBtn.addEventListener("click", () => {
-        $("#filter-teams").val(null).trigger("change"); // Сбрасываем выбор через Select2 метод
+        $("#filter-teams").val(null).trigger("change");
     });
 
     // Инициализация Select2
